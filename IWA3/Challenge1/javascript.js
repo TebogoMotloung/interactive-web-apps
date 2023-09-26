@@ -1,4 +1,4 @@
-import{
+import {
     company,
     year
 } from './configuration.js';
