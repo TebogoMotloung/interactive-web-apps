@@ -44,5 +44,5 @@ const sarahResult = {
 	},
 }
 
-console.log(leoResult)
-console.log(sarahResult)
+console.log(leoResult.address.postalCode)
+console.log(sarahResult.address.postalCode) // sarahResult.address.[postalCode] ?? 
