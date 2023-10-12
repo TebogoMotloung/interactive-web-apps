@@ -56,17 +56,17 @@ const futureId = 9
 console.log(holidays.futureId || `ID ${futureId} not created yet`)
 
  const newId = 6
-const newDate = '25/12/2023'
+const newDate = new Date(`25 December ${currentYear}`)
 const newName = 'X-mas'
 const correctDate = newDate;
-correctDate.hours = 0
-correctDate.minutes = 0
+correctDate.hours = 0;
+correctDate.minutes = 0;
 isEarlier = newDate < holidays[6].date
 console.log(`'New date is earlier:', ${isEarlier}`)
 if (isEarlier){ newDate == correctDate}
 console.log('ID change:', holidays[6].id != newId)
 console.log('Name change:', newName )
-console.log('Date change:', newDate)
+console.log('Date change:', newDate.toLocaleDateString().split(",")[0])
 
 const firstHolidayTimestamp = Math.min(
     holidays[0].date.getTime,
