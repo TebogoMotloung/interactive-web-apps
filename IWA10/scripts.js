@@ -55,7 +55,7 @@ const futureId = 9
 
 console.log(holidays.futureId || `ID ${futureId} not created yet`)
 
- const newId = 6
+const newId = 6
 const newDate = new Date(`25 December ${currentYear}`)
 const newName = 'X-mas'
 const correctDate = newDate;
@@ -93,6 +93,7 @@ const lastHolidayTimestamp = Math.max(
 )
 
 const firstDay = firstHolidayTimestamp.getDate
+console.log(firstDay)
 const firstMonth = firstHolidayTimestamp.getMonth
 const lastDay = lastHolidayTimestamp.getDate
 const lastMonth = lastHolidayTimestamp.getMonth
