@@ -1,43 +1,66 @@
 // script.js
 
 
+// look for ORDER in document
+let order1 = document.querySelector('[data-key="order1"]');
 
-const oneRoot= document.querySelector('[data-key="order1"]')
-const oneBiscuits= document.querySelector('[data-biscuits="10"]');
-const oneDonuts =document.querySelector('[data-donuts="13"]');
-const onePancakes= document.querySelector('[data-pancakes="0"]');
-const oneStatus= document.querySelector('[data-delivered="false"]');
+// look for CLASS in order1
+let biscuits1class = order1.querySelector(".biscuits");
+let biscuits1count = biscuits1class.querySelector(".count");
+biscuits1count.textContent = order1.getAttribute("data-biscuits");
 
+let donut1class = order1.querySelector(".donuts");
+let donut1count = donut1class.querySelector(".count");
+donut1count.textContent = order1.getAttribute("data-donuts");
 
-const twoRoot = document.querySelector('[data-key="order2"]');
-const twoBiscuits= document.querySelector('[data-biscuit="5"]');
-const twoDonuts =document.querySelector('[data-donuts="0"]');
-const twoPancakes= document.querySelector('[data-pancakes="2"]');
-const twoStatus= document.querySelector('[data-delivered="false"]');
+let pancakes1class = order1.querySelector(".pancakes");
+let pancakes1count = pancakes1class.querySelector(".count");
+pancakes1count.textContent = order1.getAttribute("data-pancakes");
 
-const threeRoot = document.querySelector('[data-key="order3"]');
-const threeBiscuits= document.querySelector('[data-biscuits="12"]');
-const threeDonuts =document.querySelector('[data-donuts="11"]');
-const threePancakes= document.querySelector('[data-pancakes="15"]')
-const threeStatus= document.querySelector('[data-delivered="true"]');
-
-
-
+let status1class = order1.querySelector(".status");
+let status1line = status1class.querySelector("dd");
+status1line.textContent =
+  order1.getAttribute("data-delivered") === "true" ? "Delivered" : "Pending";
 
 
-// oneBiscuits && twoBiscuits && threeBiscuits === 
-console.log(oneBiscuits.innerText)
+// ORDER 2
 
-// oneDonuts = 1-root.donuts,
-// onePancakes = 1-root.pancakes,
-// oneStatus= 1-root.status ? Delivered : Pending
+let order2 = document.querySelector('[data-key="order2"]');
 
-// twoBiscuits= 2-root.biscuits,
-// twoDonuts = 2-root.donuts,
-// twoPancakes = 2-root.pancakes,
-// twoStatus = 2-root.status ? Delivered : Pending
+let biscuits2class = order2.querySelector(".biscuits");
+let biscuits2count = biscuits2class.querySelector(".count");
+biscuits2count.textContent = order2.getAttribute("data-biscuits");
 
-// threeBiscuits= 3-root.biscuits,
-// threeDonuts = 3-root.donuts,
-// threePancakes = 3-root.pancakes,
-// threeStatus = 3-root.status ? Delivered : Pending
+let donut2class = order2.querySelector(".donuts");
+let donut2count = donut2class.querySelector(".count");
+donut2count.textContent = order2.getAttribute("data-donuts");
+
+let pancakes2class = order2.querySelector(".pancakes");
+let pancakes2count = pancakes2class.querySelector(".count");
+pancakes2count.textContent = order2.getAttribute("data-pancakes");
+
+let status2class = order2.querySelector(".status");
+let status2line = status2class.querySelector("dd");
+status2line.textContent =
+  order2.getAttribute("data-delivered") === "true" ? "Delivered" : "Pending";
+
+// ORDER 3
+
+let order3 = document.querySelector('[data-key="order3"]');
+
+let biscuits3class = order3.querySelector(".biscuits");
+let biscuits3count = biscuits3class.querySelector(".count");
+biscuits3count.textContent = order3.getAttribute("data-biscuits");
+
+let donut3class = order3.querySelector(".donuts");
+let donut3count = donut3class.querySelector(".count");
+donut3count.textContent = order3.getAttribute("data-donuts");
+
+let pancakes3class = order3.querySelector(".pancakes");
+let pancakes3count = pancakes3class.querySelector(".count");
+pancakes3count.textContent = order3.getAttribute("data-pancakes");
+
+let status3class = order3.querySelector(".status");
+let status3line = status3class.querySelector("dd");
+status3line.textContent =
+  order3.getAttribute("data-delivered") === "true" ? "Delivered" : "Pending";
